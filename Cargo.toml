@@ -2,7 +2,14 @@
 name = "umbra"
 version = "0.1.0"
 edition = "2024"
-description = "An open-source game engine"
+description = "A 2D isometric RTS engine"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
+winit = "0.30"
+wgpu = "30"
+bytemuck = { version = "1", features = ["derive"] }
+image = { version = "0.25", default-features = false, features = ["png"] }
+thiserror = "2"
+anyhow = "1"
+pollster = "1"
